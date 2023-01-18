@@ -6,6 +6,7 @@ Roguelike game written in C++.  Using [bgfx](https://github.com/bkaradzic/bgfx) 
 
 ```Bash
 mkdir build
-cmake build
-cmake --build build/
+cd build
+cmake build ../
+cmake --build .
 ```
