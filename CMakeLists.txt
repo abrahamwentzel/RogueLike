@@ -39,7 +39,6 @@ target_include_directories(
     ${includes}
 )
 
-
 # Link directories.
 set(
     links
