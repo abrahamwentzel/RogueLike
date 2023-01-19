@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install dependancies
-      run:  sudo apt-get install libgl1-mesa-dev x11proto-core-dev libx11-dev
+      run:  sudo apt-get install libgl1-mesa-dev x11proto-core-dev libx11-dev --fix-missing
     - name: Build RogueLike
       run:  mkdir build;
             cd build;
