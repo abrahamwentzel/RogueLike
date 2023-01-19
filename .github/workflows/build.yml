@@ -19,5 +19,5 @@ jobs:
             ls;
             mkdir build;
             cd build;
-            cmake build ../;
+            cmake ../;
             cmake --build .;
