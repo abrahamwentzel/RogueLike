@@ -7,6 +7,9 @@ project(Build_RogueLike)
 # Find OpenGL.
 find_package(OpenGL REQUIRED)
 
+# Find X11
+find_package(X11 REQUIRED)
+
 # BGFX.
 add_compile_definitions(BX_CONFIG_DEBUG)
 
@@ -59,6 +62,7 @@ set(
     bimgRelease
     bxRelease
     ${OPENGL_LIBRARIES}
+    ${X11_LIBRARIES}
 )
 target_link_libraries(
     RogueLike 
