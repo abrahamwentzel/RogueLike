@@ -31,6 +31,7 @@ set(
     "third-party/bimg/include/"
     "third-party/bnet/include/"
     "third-party/glfw/include/"
+    "assets/"
     ${OPENGL_INCLUDE_DIRS}
 )
 target_include_directories(

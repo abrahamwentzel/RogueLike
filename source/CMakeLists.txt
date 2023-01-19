@@ -19,4 +19,4 @@ target_include_directories(
 )
 
 # Add subdirectories.
-add_subdirectory(source/test)
+add_subdirectory(source/core)
