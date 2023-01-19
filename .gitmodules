@@ -7,3 +7,9 @@
 [submodule "third-party/glfw"]
 	path = third-party/glfw
 	url = https://github.com/glfw/glfw
+[submodule "third-party/bimg"]
+	path = third-party/bimg
+	url = https://github.com/bkaradzic/bimg
+[submodule "third-party/bnet"]
+	path = third-party/bnet
+	url = https://github.com/bkaradzic/bnet

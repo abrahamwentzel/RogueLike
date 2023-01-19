@@ -1,0 +1,32 @@
+name: Format
+
+on:
+  push:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  fmt:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Checkout
+      uses: actions/checkout@v3
+    
+    - name: Install dependancies
+      run: sudo apt install clang-format  
+
+    - name: Run clang format
+      run: cd source;
+           clang-format -i --style=file:../.clang-format *.cpp *.h
+
+    - name: Push changes
+      run: | 
+        if [[ $(git diff --stat) != '' ]]; then
+          git config --global user.name 'GitHub Actions'
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Automated formatting"
+          git push
+        fi
