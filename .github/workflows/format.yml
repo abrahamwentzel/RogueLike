@@ -20,7 +20,7 @@ jobs:
 
     - name: Run clang format
       run: cd source;
-           clang-format -i --style=file:../.clang-format *.cpp *.h
+           clang-format -i --style=file:../.clang-format *.cpp *.h;
 
     - name: Push changes
       run: | 
