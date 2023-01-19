@@ -1,3 +1,5 @@
+// clang-format off
+
 #include "stdint.h"
 
 static const uint8_t s_logo[4000] =
