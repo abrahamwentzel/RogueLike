@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build with CMake
-      run:  mkdir build       \
-            cd build          \
-            cmake build ../   \
-            cmake --build .
+      run:  mkdir build;
+            cd build;
+            cmake build ../;
+            cmake --build .;
