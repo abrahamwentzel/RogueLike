@@ -1,7 +1,10 @@
-struct GLFWwindow;
 #include "bgfx/bgfx.h"
+#include <memory>
 
 static bool s_showStats = false;
+
+class GameWindow;
+struct GLFWwindow;
 
 class Game {
 
@@ -16,11 +19,7 @@ public:
 
 private:
 
-    GLFWwindow* m_window = nullptr;
+    std::unique_ptr<GameWindow> m_window;
 	const bgfx::ViewId m_kClearView = 0;
-    int m_width = 0;
-    int m_height = 0;
-
-    // Entities.
 
 };
