@@ -9,17 +9,14 @@ struct GLFWwindow;
 class Game {
 
 public:
+  Game();
+  ~Game();
 
-    Game();
-    ~Game();
-    
-    void run();
-    void update();
-    void render();
+  void run();
+  void update();
+  void render();
 
 private:
-
-    std::unique_ptr<GameWindow> m_window;
-	const bgfx::ViewId m_kClearView = 0;
-
+  std::unique_ptr<GameWindow> m_window;
+  const bgfx::ViewId m_kClearView = 0;
 };

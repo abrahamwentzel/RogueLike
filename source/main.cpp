@@ -1,7 +1,6 @@
 #include "Game.h"
 
-int main(int argc, char **argv)
-{
-    Game().run();
-	return 0;
+int main(int argc, char **argv) {
+  Game().run();
+  return 0;
 }

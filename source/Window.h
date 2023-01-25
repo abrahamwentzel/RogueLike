@@ -5,40 +5,37 @@ typedef struct _XDisplay Display;
 class GameWindow {
 
 public:
-    
-    GameWindow();
-    ~GameWindow();
+  GameWindow();
+  ~GameWindow();
 
-    GameWindow& update();
+  GameWindow &update();
 
-    // Setters.
-    GameWindow& set_width(int width);
-    GameWindow& set_height(int width);
+  // Setters.
+  GameWindow &set_width(int width);
+  GameWindow &set_height(int width);
 
-    // Getters.
-    int get_width();
-    int get_height();
+  // Getters.
+  int get_width();
+  int get_height();
 
-    // Query GLFW and update the size data.
-    GameWindow& update_size();
+  // Query GLFW and update the size data.
+  GameWindow &update_size();
 
-    // Checks if the window should close.
-    bool should_close();
+  // Checks if the window should close.
+  bool should_close();
 
-    // Native Linux stuff.
-    // Not important.
-    Display* get_native_display_type();
-    void* get_native_window_handle();
+  // Native Linux stuff.
+  // Not important.
+  Display *get_native_display_type();
+  void *get_native_window_handle();
 
 private:
+  // Handle (pointer) to the GLFW window.
+  GLFWwindow *m_handle = nullptr;
 
-    // Handle (pointer) to the GLFW window.
-    GLFWwindow* m_handle = nullptr;
-
-    // Resolution.
-    int m_width = 0;
-    int m_height = 0;
-
+  // Resolution.
+  int m_width = 0;
+  int m_height = 0;
 };
 
 // Will need this if we want to make the native GLFW functions cross platform.
@@ -55,11 +52,11 @@ private:
 
 /*
 #if BX_PLATFORM_LINUX || BX_PLATFORM_BSD
-	init.platformData.ndt = glfwGetX11Display();
-	init.platformData.nwh = (void*)(uintptr_t)glfwGetX11Window(m_window);
+        init.platformData.ndt = glfwGetX11Display();
+        init.platformData.nwh = (void*)(uintptr_t)glfwGetX11Window(m_window);
 #elif BX_PLATFORM_OSX
-	init.platformData.nwh = glfwGetCocoaWindow(window);
+        init.platformData.nwh = glfwGetCocoaWindow(window);
 #elif BX_PLATFORM_WINDOWS
-	init.platformData.nwh = glfwGetWin32Window(window);
+        init.platformData.nwh = glfwGetWin32Window(window);
 #endif
 */
