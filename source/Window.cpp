@@ -36,7 +36,7 @@ GameWindow &GameWindow::update_size() {
 
 int GameWindow::get_width() { return m_width; }
 
-int GameWindow::get_height() { return m_width; }
+int GameWindow::get_height() { return m_height; }
 
 bool GameWindow::should_close() { return glfwWindowShouldClose(m_handle); }
 
