@@ -2,6 +2,9 @@
 set(
     source_files
     "source/main.cpp"
+    "source/Game.cpp"
+    "source/GameLoop.cpp"
+    "source/Window.cpp"
 )
 
 # Executable.
@@ -17,6 +20,3 @@ target_include_directories(
     PRIVATE
     ${includes}
 )
-
-# Add subdirectories.
-add_subdirectory(source/core)
