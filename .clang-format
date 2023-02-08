@@ -15,9 +15,6 @@ AlignArrayOfStructures: Left
 AlignConsecutiveAssignments: Consecutive
 AlignEscapedNewlines: Left
 AlignOperands: Align
-AlignTrailingComments:
-  Kind: Always
-  OverEmptyLines: 2
 PackConstructorInitializers: CurrentLine
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: true
