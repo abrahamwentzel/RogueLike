@@ -6,9 +6,10 @@ static bool s_showStats = false;
 class GameWindow;
 struct GLFWwindow;
 
-class Game {
+class Game
+{
 
-public:
+  public:
   Game();
   ~Game();
 
@@ -16,7 +17,7 @@ public:
   void update();
   void render();
 
-private:
+  private:
   std::unique_ptr<GameWindow> m_window;
   const bgfx::ViewId m_kClearView = 0;
 };

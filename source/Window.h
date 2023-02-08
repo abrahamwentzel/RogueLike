@@ -2,39 +2,40 @@
 struct GLFWwindow;
 typedef struct _XDisplay Display;
 
-class GameWindow {
+class GameWindow
+{
 
-public:
+  public:
   GameWindow();
   ~GameWindow();
 
-  GameWindow &update();
+  GameWindow& update();
 
   // Setters.
-  GameWindow &set_width(int width);
-  GameWindow &set_height(int width);
+  GameWindow& set_width(int width);
+  GameWindow& set_height(int width);
 
   // Getters.
   int get_width();
   int get_height();
 
   // Query GLFW and update the size data.
-  GameWindow &update_size();
+  GameWindow& update_size();
 
   // Checks if the window should close.
   bool should_close();
 
   // Native Linux stuff.
   // Not important.
-  Display *get_native_display_type();
-  void *get_native_window_handle();
+  Display* get_native_display_type();
+  void* get_native_window_handle();
 
-private:
+  private:
   // Handle (pointer) to the GLFW window.
-  GLFWwindow *m_handle = nullptr;
+  GLFWwindow* m_handle = nullptr;
 
   // Resolution.
-  int m_width = 0;
+  int m_width  = 0;
   int m_height = 0;
 };
 
