@@ -5,7 +5,6 @@ class Entity
 
 public:
     void move();
-    void jump();
 
 private:
     int x;
@@ -14,7 +13,7 @@ private:
 
 };
 
-class Player: Entity
+class Player : Entity
 {
 
 public:
@@ -25,7 +24,7 @@ private:
 
 };
 
-class Companion: Entity
+class Companion : Entity
 {
 
 public:
@@ -35,7 +34,7 @@ private:
 
 };
 
-class Zombie: Entity
+class Zombie : Entity
 {
 
 public:
@@ -66,3 +65,45 @@ public:
     void one_shot();
 
 };
+
+// Functions
+
+void Entity :: move()
+{
+
+}
+
+void Player :: shoot()
+{
+
+}
+
+void Player :: melee()
+{
+
+}
+
+void Companion :: bite()
+{
+
+}
+
+void Perks :: ammo()
+{
+
+}
+
+void Perks :: health()
+{
+
+}
+
+void Perks :: invincible()
+{
+
+}
+
+void Perks :: one_shot()
+{
+
+}
