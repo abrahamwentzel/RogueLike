@@ -10,7 +10,7 @@ AlignConsecutiveAssignments: false
 PointerAlignment: Left
 ColumnLimit: 100
 AccessModifierOffset: 0
-AlignAfterOpenBracket: BAS_Align
+AlignAfterOpenBracket: true
 AlignArrayOfStructures: AIAS_Left
 AlignConsecutiveAssignments: Consecutive
 AlignEscapedNewlines: ENAS_Left
