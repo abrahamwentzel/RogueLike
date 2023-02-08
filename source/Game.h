@@ -9,7 +9,7 @@ struct GLFWwindow;
 class Game
 {
 
-  public:
+public:
   Game();
   ~Game();
 
@@ -17,7 +17,7 @@ class Game
   void update();
   void render();
 
-  private:
+private:
   std::unique_ptr<GameWindow> m_window;
   const bgfx::ViewId m_kClearView = 0;
 };

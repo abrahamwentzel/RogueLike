@@ -5,7 +5,7 @@ typedef struct _XDisplay Display;
 class GameWindow
 {
 
-  public:
+public:
   GameWindow();
   ~GameWindow();
 
@@ -30,7 +30,7 @@ class GameWindow
   Display* get_native_display_type();
   void* get_native_window_handle();
 
-  private:
+private:
   // Handle (pointer) to the GLFW window.
   GLFWwindow* m_handle = nullptr;
 
