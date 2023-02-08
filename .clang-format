@@ -5,3 +5,20 @@ AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
 AlignConsecutiveMacros: false
 AlignConsecutiveAssignments: false
+
+# Gotta make it look good!
+PointerAlignment: Left
+ColumnLimit: 100
+AccessModifierOffset: 0
+AlignAfterOpenBracket: BAS_Align
+AlignArrayOfStructures: AIAS_Left
+AlignConsecutiveAssignments: Consecutive
+AlignEscapedNewlines: ENAS_Left
+AlignOperands: OAS_Align
+AlignTrailingComments: TCAS_Always
+PackConstructorInitializers: PCIS_CurrentLine
+AllowShortBlocksOnASingleLine: SBS_Empty
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: SFS_Empty
+AllowShortLoopsOnASingleLine: true
+BreakBeforeBraces: BS_Allman
