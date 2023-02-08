@@ -2,6 +2,6 @@
 
 int main(int argc, char** argv)
 {
-  Game().run();
-  return 0;
+	Game().run();
+	return 0;
 }
