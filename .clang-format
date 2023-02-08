@@ -9,7 +9,6 @@ AlignConsecutiveAssignments: false
 # Gotta make it look good!
 PointerAlignment: Left
 ColumnLimit: 100
-AccessModifierOffset: 0
 AlignAfterOpenBracket: Align
 AlignArrayOfStructures: Left
 AlignConsecutiveAssignments: Consecutive
