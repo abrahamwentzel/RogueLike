@@ -11,7 +11,7 @@ PointerAlignment: Left
 ColumnLimit: 100
 AccessModifierOffset: 0
 AlignAfterOpenBracket: true
-AlignArrayOfStructures: AIAS_Left
+AlignArrayOfStructures: true
 AlignConsecutiveAssignments: Consecutive
 AlignEscapedNewlines: ENAS_Left
 AlignOperands: OAS_Align
